@@ -1,3 +1,39 @@
-# Assessment project Steets
+# Assessment project for interview at Steets
 
-Made by Justin Leemans
+This project is made as an assessment for an interview at Steets.
+
+Made by Justin Leemans.
+
+# Assignment
+
+Below is an overview of the assessment assignment that was given. It is kept here in the README.md for easy documentation and keeping track of all requirements.
+
+### Intro
+
+We'd like to see how you handle this testcase. It uses databases, encryption, date functions and some AJAX handling. Please write everything in OOP. You can leave the html/css plain. A little styling is a nice to have.
+
+### Year
+
+Create a simple form with an input year and use the method POST.
+
+Count the filled in year backwards, and show which year is a primenumber. Execute it until you have 30 prime years. Also tell on which day christmas is (monday, tuesday etc.). Don't show this yet on the frontend. We'll be adding it to the database first.
+
+### Encryption in database
+
+Create a simple table in MySQL with 3 columns (id, year, day). 
+
+Encrypt the day, where christmas is on, using an encryption of your liking. Save it to the table with prepared statements or with . If it's already present, you won't have to insert it again.
+
+When it's done, return all of the (decrypted) rows in a simple html table and return the output from you initially input year.
+
+### Summary
+
+1. Input data:
+    - Input year
+    - Send form
+        - Send data to server
+        - Insert encrypted data into database
+2. Output data:
+    - Decrypt data 
+    - Output using JSON object
+    - Show a table with the handled data

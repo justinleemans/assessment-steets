@@ -37,3 +37,23 @@ When it's done, return all of the (decrypted) rows in a simple html table and re
     - Decrypt data 
     - Output using JSON object
     - Show a table with the handled data
+  
+# Logbook
+
+Below is a logbook where I keep track of when I worked on what tasks and a rough estimate of how much time I spent on that day.
+
+Total time spent: 2 hours
+
+### 4-7-2024
+
+Time spent: 1 hour
+
+- Setup Git repository
+- Initialized Laravel project through Laravel Sail and Docker Desktop
+
+### 5-7-2024
+
+Time spent: 1 hour
+
+- Added AlpineJs and Bootstrap to project through Vite
+- Added page layout and included bundled node modules

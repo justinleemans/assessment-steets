@@ -57,3 +57,11 @@ Time spent: 1 hour
 
 - Added AlpineJs and Bootstrap to project through Vite
 - Added page layout and included bundled node modules
+
+### 8-7-2024
+
+Time spent: 1 hour
+
+- Fixed small issue with AlpineJs initialisation
+- Created database migration, model and controller
+- Added starter page for showing the form

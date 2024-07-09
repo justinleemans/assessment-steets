@@ -7,6 +7,8 @@
         <title>{{ $title ?? 'Laravel' }}</title>
 
         @vite('resources/css/app.css')
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body class="antialiased">
         {{ $slot }}

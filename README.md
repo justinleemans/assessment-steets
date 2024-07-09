@@ -24,7 +24,7 @@ Create a simple table in MySQL with 3 columns (id, year, day).
 
 Encrypt the day, where christmas is on, using an encryption of your liking. Save it to the table with prepared statements or with . If it's already present, you won't have to insert it again.
 
-When it's done, return all of the (decrypted) rows in a simple html table and return the output from you initially input year.
+When it's done, return all of the (decrypted) rows in a simple html table and return the output from your initially input year.
 
 ### Summary
 
@@ -42,7 +42,7 @@ When it's done, return all of the (decrypted) rows in a simple html table and re
 
 Below is a logbook where I keep track of when I worked on what tasks and a rough estimate of how much time I spent on that day.
 
-Total time spent: 2 hours
+Total time spent: 5 hours
 
 ### 4-7-2024
 
@@ -65,3 +65,11 @@ Time spent: 1 hour
 - Fixed small issue with AlpineJs initialisation
 - Created database migration, model and controller
 - Added starter page for showing the form
+
+### 9-7-2024
+
+Time spent: 2 hours
+
+- Added form to page
+- Added all neccesairy routes and controller methods
+- Added ajax form submission to form

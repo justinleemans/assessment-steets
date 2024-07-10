@@ -42,7 +42,7 @@ When it's done, return all of the (decrypted) rows in a simple html table and re
 
 Below is a logbook where I keep track of when I worked on what tasks and a rough estimate of how much time I spent on that day.
 
-Total time spent: 5 hours
+Total time spent: 6 hours
 
 ### 4-7-2024
 
@@ -73,3 +73,13 @@ Time spent: 2 hours
 - Added form to page
 - Added all neccesairy routes and controller methods
 - Added ajax form submission to form
+
+### 10-7-2024
+
+Time spent: 1 hour
+
+- Added logic for calculating years that are prime numbers to controller
+- Added logic for finding christmas day on those year
+- Linked everything together
+- Fixed resulting bugs
+- Polished final result

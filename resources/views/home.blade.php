@@ -1,10 +1,7 @@
 <x-layout>
     <x-slot:title>Home</x-slot>
-    {{-- <div x-data="{ message: 'Hello, Alpine!' }" class="text-center mt-4">
-        <span x-text="message"></span>
-    </div> --}}
-    <div class="container d-flex flex-column align-items-center">
-        <form class="w-50 my-3" x-data="yearForm()" @submit.prevent="submitForm">
+    <div class="container d-flex flex-column align-items-center" x-data="yearForm()" @submit.prevent="submitForm">
+        <form class="w-50 my-3">
             <div class="mb-3">
                 <label for="year" class="form-label">Enter Year</label>
                 <input type="number" class="form-control" id="year" value="2024" min="0" x-model="formData.year">
@@ -20,11 +17,11 @@
                 </tr>
             </thead>
             <tbody>
-                <template x-for="(item, index) in responseData" :key="index">
+                <template x-for="(year, index) in responseData" :key="index">
                     <tr>
                         <th scope="row" x-text="index + 1"></th>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
+                        <td x-text="year.year"></td>
+                        <td x-text="year.day"></td>
                     </tr>
                 </template>
             </tbody>
@@ -37,7 +34,7 @@
         function yearForm()
         {
             return {
-                formData: {},
+                formData: { year: 2024 },
                 responseData: [],
                 formLoading: false,
                 submitText: "Submit",
@@ -55,8 +52,11 @@
                     })
                     .then(response => response.json())
                     .then(result => {
-                        responseData = result;
-                        console.log(result);
+                        this.responseData = result.years;
+                        
+                        this.responseData.forEach(element => {
+                            console.log(element.year);
+                        });
                     })
                     .catch(error => console.error("Error", error))
                     .finally(() => {

@@ -11,6 +11,8 @@ class Year extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['year', 'day'];
+
     protected function day(): Attribute
     {
         return Attribute::make(

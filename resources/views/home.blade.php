@@ -56,6 +56,7 @@
                     .then(response => response.json())
                     .then(result => {
                         responseData = result;
+                        console.log(result);
                     })
                     .catch(error => console.error("Error", error))
                     .finally(() => {
